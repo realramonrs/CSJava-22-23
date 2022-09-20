@@ -22,6 +22,7 @@ public class MostrarPorConsola {
 		String f1bis = df.format(f1);
 		System.out.println("f1bis = " + f1bis);
 		
+		System.out.println("Dijo El Quijote:\n \"Cuidado Sancho\"");
 	}
 
 }
