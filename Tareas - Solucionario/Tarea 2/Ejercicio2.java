@@ -12,14 +12,9 @@ public class Ejercicio2 {
 			correcto =  false;
 		}
 		else if(ultimaPosicionPunto<posicionArroba) {
-			//Comprobamos que haya un punto despuÈs del @
-			
+			//Comprobamos que haya un punto despu√©s del @			
 				correcto = false;
-			}
-		//Comprobamos que contenga despuÈs del @ el string hotmail, gmail, o yahoo 
-		else if(!email.split("@")[1].contains("yahoo")&&!email.split("@")[1].contains("hotmail")&&!email.split("@")[1].contains("gmail")){
-			correcto = false;
-		}	
+			}		
 		else {
 			correcto = true;
 		}
@@ -99,10 +94,10 @@ public class Ejercicio2 {
 					System.out.println("Introduzca su correo");
 					String correo= lector.nextLine();
 					if(guardarCorreo(emails,correo)) {
-						System.out.println("Guardado con Èxito");
+						System.out.println("Guardado con √©xito");
 					}
 					else {
-						System.err.println("Formato no v·lido");
+						System.err.println("Formato no v√°lido");
 					}
 					
 					
@@ -115,11 +110,11 @@ public class Ejercicio2 {
 					
 					int posicion = buscarCorreo(emails, correoB);
 					if(posicion > -1) {
-						System.out.println("El correo est· en la posiciÛn : " + posicion);
+						System.out.println("El correo est√° en la posici√≥n : " + posicion);
 						}
 					else {
 						
-						System.out.println("No se encontrÛ el correo");
+						System.out.println("No se encontr√≥ el correo");
 					}
 					
 					
@@ -149,9 +144,9 @@ public class Ejercicio2 {
 					System.out.println("Porcentaje yahoos: " + porcentajeyahoos +" %." );
 					
 				case "e":
-					salir=true; //Se podrÌa hacer tambiÈn con System.exit(0);
+					salir=true; //Se podr√≠a hacer tambi√©n con System.exit(0);
 					System.out.println("");
-					System.out.println("Programa cerrado con Èxito");
+					System.out.println("Programa cerrado con √©xito");
 					break;	
 				}
 				
