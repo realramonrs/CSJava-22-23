@@ -8,38 +8,27 @@ public class Municipio {
 	
 	public Municipio(String nombre,int cm,int cp) {
 		this.nombre = nombre;
-		int valorNumerico = 9;
-		// String cadena = String.format("%02d" , valorNumerico);
+		//Establecemos el código del municipio y de la provincia llamando a los métodos set correspondientes
+		//Esto centraliza el acceso en esos métodos, que es 
 		setCodigoMunicipio(cm);
 		setCodigoProvincia(cp);
 		setDC();
-	}
-	
-	
-	
-	
+	}	
+	//**************************************Métodos de acceso : set y get ******************//
 	public String getNombre() {
 		return nombre;
 	}
-
-
-
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
-
-
-
 	public String getCodigoMunicipio() {
 		return codigoMunicipio;
 	}
 
-
-
-
 	public void setCodigoMunicipio(int codigoMunicipio) {
+		//Validamos que el código sea un número positivo inferior a 999
 		if(codigoMunicipio < 999 && codigoMunicipio>=1)
 		this.codigoMunicipio = String.format("%03d",codigoMunicipio);
 	}
@@ -51,18 +40,20 @@ public class Municipio {
 	public void setCodigoProvincia(int codigoProvincia) {
 		if(codigoProvincia>0 && codigoProvincia < 99)
 		this.codigoProvincia = String.format("%03d",codigoProvincia);
+	}	
+	
+	
+	public String getDc() {
+		return dc;
 	}
-	
-	
+	//********************************** Final métodos de acceso *****************************//
 	@Override
 	public String toString() {
 		return "Municipio [nombre=" + nombre + ", codigoMunicipio=" + codigoMunicipio + ", codigoProvincia="
 				+ codigoProvincia + ", dc=" + dc + "]";
 	}
 
-
-
-
+	//Este método es privado ya que es un cálculo interno que no interesa que pueda ser ejecutado desde el exterior
 	private void setDC() {
 		int[][] magicos = {
 	         	{0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
