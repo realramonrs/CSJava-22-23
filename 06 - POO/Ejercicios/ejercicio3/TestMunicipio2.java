@@ -124,6 +124,7 @@ public class TestMunicipio2 {
 				salir = true;
 				break;
 				default:
+					System.out.println("Opción errónea vuelva a intentarlo");
 					break;
 			}
 		}
