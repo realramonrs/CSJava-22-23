@@ -9,7 +9,9 @@ public class Solicitud {
 	private Estado estado;
 	public Solicitud(String codigo, String titulo) {
 		super();
-		this.codigo = codigo;
+		if(codigo.length()==4) {
+			this.codigo  = codigo;
+		}
 		this.titulo = titulo;
 		this.fecha = LocalDate.now();
 		this.estado = Estado.Pendiente;
@@ -28,6 +30,10 @@ public class Solicitud {
 	}
 	public LocalDate getFecha() {
 		return fecha;
+	}
+	
+	public void setFecha(LocalDate fecha) {
+		this.fecha = fecha;
 	}
 	@Override
 	public String toString() {
