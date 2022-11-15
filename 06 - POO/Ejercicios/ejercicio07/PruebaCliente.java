@@ -79,7 +79,7 @@ public class PruebaCliente {
 				
 				for(Cliente c : cartera) {
 					if(c!=null) {
-					if(c.getNif()==nif) {
+					if(c.getNif().equals(nif)) {
 						cBuscado = c;
 						break;
 					}
