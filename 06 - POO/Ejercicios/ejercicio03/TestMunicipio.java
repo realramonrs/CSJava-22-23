@@ -1,4 +1,4 @@
-package ejercicio3;
+package ejercicio03;
 
 public class TestMunicipio {
 

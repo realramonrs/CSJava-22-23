@@ -1,4 +1,4 @@
-package misClases;
+package ejercicio10;
 
 import java.util.Arrays;
 

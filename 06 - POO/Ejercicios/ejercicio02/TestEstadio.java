@@ -1,4 +1,4 @@
-package ejercicio2;
+package ejercicio02;
 
 public class TestEstadio {
 

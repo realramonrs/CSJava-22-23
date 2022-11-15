@@ -1,7 +1,5 @@
-package pruebas;
+package ejercicio10;
 
-import misClases.Ingrediente;
-import misClases.Receta;
 
 public class PrincipalObjetos2 {
 

@@ -1,4 +1,4 @@
-package misClases;
+package ejercicio10;
 
 public class Ingrediente {
 	private String nombre;

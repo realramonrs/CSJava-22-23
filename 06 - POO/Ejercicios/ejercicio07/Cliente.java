@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ejercicio2;
+package ejercicio07;
 
 public class Cliente {
 

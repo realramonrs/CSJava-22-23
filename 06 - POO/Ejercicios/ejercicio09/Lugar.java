@@ -1,7 +1,7 @@
 /**
  * 
  */
-package ejercicio3;
+package ejercicio09;
 
 /**
  * @author Ramon RS
