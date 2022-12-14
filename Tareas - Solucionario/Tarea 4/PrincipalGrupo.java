@@ -1,7 +1,6 @@
 /**
  * 
  */
-package tarea;
 
 /**
  * @author Ramon RS
