@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tarea;
+
 
 /**
  * @author Ramon RS
@@ -10,9 +10,9 @@ package tarea;
 public class Grupo {
 
 	private String nombre;
-	int tiempoActuacion;
-	int popularidad;
-	float coste;
+	private int tiempoActuacion;
+	private int popularidad;
+	private float coste;
 	
 	public Grupo() {
 		

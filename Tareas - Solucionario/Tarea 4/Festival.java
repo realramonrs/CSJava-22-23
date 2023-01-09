@@ -1,7 +1,7 @@
 /**
  * 
  */
-package tarea;
+
 
 /**
  * @author Ramon RS
@@ -12,12 +12,37 @@ public class Festival {
 	private String nombre;
 	private int duracion;
 	private float coste;
-	Grupo programa[];
+	private Grupo programa[];
 	
 	public Festival(String nombre,int numeroGrupos) {
 		this.nombre = nombre;
 		programa = new Grupo[numeroGrupos];
 	}
+			
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public int getDuracion() {
+		return duracion;
+	}
+
+	public void setDuracion(int duracion) {
+		this.duracion = duracion;
+	}
+
+	public float getCoste() {
+		return coste;
+	}
+
+	public Grupo[] getPrograma() {
+		return programa;
+	}
+
 	
 	public void addGrupo(Grupo g) {
 		for(int i = 0;i< programa.length;i++) {
@@ -63,4 +88,5 @@ public class Festival {
 		
 		return mensaje;
 	}
+	
 }
